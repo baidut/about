@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Stylish Portfolio - Start Bootstrap Template</title>
+    <title>Zhenqiang Ying</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -29,6 +29,10 @@
 
       gtag('config', 'UA-71772193-3');
     </script>
+    <style media="screen" type="text/css">
+        #particles-js canvas{
+        }
+    </style>  
   </head>
 
   <body id="page-top">
@@ -68,7 +72,15 @@
         </h3>
         <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
       </div>
-      <div class="overlay"></div>
+      <div class="overlay">
+      </div>
+      <div id="particles-js" style="position:absolute;z-index:-1;height:100%;width:100%"></div>
+      <script type="text/javascript">
+        if (screen && screen.width > 480) {
+          // 防止手机端卡顿，手机端不加载
+          document.write('<script src="js/particles.js"><\/script><script src="js/app.js"><\/script>');
+        }
+      </script>
     </header>
 
     <!-- About -->
